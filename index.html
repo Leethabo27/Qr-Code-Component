@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Component</title>
+    <style>
+      /* Reset Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Body Styling */
+      body {
+        font-family: "Poppins", Arial, sans-serif;
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 20px;
+      }
+
+      /* QR Card Styling */
+      .qr-card {
+        background: white;
+        border-radius: 20px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        width: 320px;
+        transition: transform 0.3s ease;
+      }
+
+      .qr-card:hover {
+        transform: scale(1.05);
+      }
+
+      .qr-image {
+        width: 100%;
+        border-radius: 12px;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        color: #2c3e50;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #7f8c8d;
+        line-height: 1.6;
+      }
+
+      .cta {
+        margin-top: 20px;
+        font-size: 1rem;
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        transition: background 0.3s ease;
+      }
+
+      .cta:hover {
+        background: linear-gradient(135deg, #00f2fe, #4facfe);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="qr-card">
+      <!-- Your QR Code Image -->
+      <img src="frame.png" alt="QR Code to Portfolio" class="qr-image" />
+      <h1>Check Out My Portfolio</h1>
+      <p>
+        Want to see amazing graphic designs and front-end projects? Scan the QR
+        code to visit my portfolio and start exploring today!
+      </p>
+      <a
+        href="https://lethabosemenya.myportfolio.com/"
+        target="_blank"
+        class="cta"
+        >Visit Now</a
+      >
+    </div>
+  </body>
+</html>
